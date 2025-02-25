@@ -9,8 +9,20 @@
 
 <body>
     <div id="myApp">
-        <h1>Batman quotes</h1>
+
+        <h1>Batman quotes {{summaSententias}}</h1>
         <button @:click="vectisAuctor">Toogle Acthor</button>
+        <!-- <button @:click="addereSententia">Add quotes</button> -->
+
+       &nbsp  &nbsp 
+
+       <input 
+       type="text"
+       placeholder="Add quote"
+       @keypress.enter="addereSententia"
+       v-model="nuntiusNovus"
+       >
+
         <hr>
 
         <ul>
